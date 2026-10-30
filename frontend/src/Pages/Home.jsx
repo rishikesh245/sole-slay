@@ -1,4 +1,4 @@
-import Hero from "../components/hero/Hero";
+import Hero from "../components/Hero/hero";
 import Products from "../components/Products/Products";
 import Categories from "../components/Categories/Categories";
 import Features from "../components/Features/Features";
@@ -8,9 +8,9 @@ function Home({
     category = "All",
     subcategory = "",
     price = "All",
-    user = {user},
-    setShowLogin={setShowLogin},
-    
+    user,
+    setShowLogin,
+    setCartMessage,
     isShop = false
 }) {
 
@@ -35,6 +35,8 @@ function Home({
                     price = {price}
                     user = {user}
                     setShowLogin={setShowLogin}
+                    setCartMessage={setCartMessage}
+            
 
                     
                 />
@@ -51,6 +53,7 @@ function Home({
                         price = {price}
                         user = {user}
                         setShowLogin={setShowLogin}
+                        setCartMessage={setCartMessage}
                         
                     />
 
